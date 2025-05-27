@@ -1,7 +1,7 @@
+
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import {
-  Container,
   Typography,
   Table,
   TableBody,
@@ -12,9 +12,12 @@ import {
   Button,
   IconButton,
   Alert,
+  Paper,
+  TableContainer
 } from '@mui/material';
 import { Edit, Delete } from '@mui/icons-material';
 import axios from 'axios';
+import DashboardLayout from '../layouts/DashboardLayout'; // ✅ Layout added
 
 export default function Dashboard() {
   const [items, setItems] = useState([]);
@@ -93,65 +96,44 @@ export default function Dashboard() {
   };
 
   return (
-    <Container maxWidth="md">
-      <Typography variant="h4" gutterBottom>
-        Dashboard
+    <DashboardLayout>
+      <Typography variant="h5" gutterBottom>
+        Item Management
       </Typography>
       {error && <Alert severity="error">{error}</Alert>}
-      <form onSubmit={handleSubmit}>
-        <TextField
-          label="Name"
-          fullWidth
-          margin="normal"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <TextField
-          label="Description"
-          fullWidth
-          margin="normal"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-        <TextField
-          label="Price"
-          type="number"
-          fullWidth
-          margin="normal"
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-        />
+      <form onSubmit={handleSubmit} style={{ marginBottom: '20px' }}>
+        <TextField label="Name" value={name} onChange={(e) => setName(e.target.value)} fullWidth margin="normal" />
+        <TextField label="Description" value={description} onChange={(e) => setDescription(e.target.value)} fullWidth margin="normal" />
+        <TextField label="Price" value={price} onChange={(e) => setPrice(e.target.value)} fullWidth margin="normal" type="number" />
         <Button type="submit" variant="contained" sx={{ mt: 2 }}>
           {editId ? 'Update Item' : 'Add Item'}
         </Button>
       </form>
-      <Table sx={{ mt: 4 }}>
-        <TableHead>
-          <TableRow>
-            <TableCell>Name</TableCell>
-            <TableCell>Description</TableCell>
-            <TableCell>Price</TableCell>
-            <TableCell>Actions</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {items.map((item) => (
-            <TableRow key={item._id}>
-              <TableCell>{item.name}</TableCell>
-              <TableCell>{item.description}</TableCell>
-              <TableCell>{item.price}</TableCell>
-              <TableCell>
-                <IconButton onClick={() => handleEdit(item)}>
-                  <Edit />
-                </IconButton>
-                <IconButton onClick={() => handleDelete(item._id)}>
-                  <Delete />
-                </IconButton>
-              </TableCell>
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>Name</TableCell>
+              <TableCell>Description</TableCell>
+              <TableCell>Price</TableCell>
+              <TableCell>Actions</TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </Container>
+          </TableHead>
+          <TableBody>
+            {items.map((item) => (
+              <TableRow key={item._id}>
+                <TableCell>{item.name}</TableCell>
+                <TableCell>{item.description}</TableCell>
+                <TableCell>${item.price}</TableCell>
+                <TableCell>
+                  <IconButton onClick={() => handleEdit(item)}><Edit /></IconButton>
+                  <IconButton onClick={() => handleDelete(item._id)}><Delete /></IconButton>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </DashboardLayout>
   );
 }

@@ -1,7 +1,9 @@
+
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { TextField, Button, Typography, Container, Link, Alert } from '@mui/material';
+import { TextField, Button, Typography, Link, Alert } from '@mui/material';
 import axios from 'axios';
+import AuthLayout from '../layouts/AuthLayout'; // ✅ Added layout
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -21,8 +23,8 @@ export default function Login() {
   };
 
   return (
-    <Container maxWidth="sm">
-      <Typography variant="h4" gutterBottom>
+    <AuthLayout>
+      <Typography variant="h5" align="center" gutterBottom>
         Login
       </Typography>
       {error && <Alert severity="error">{error}</Alert>}
@@ -46,9 +48,9 @@ export default function Login() {
           Login
         </Button>
       </form>
-      <Typography sx={{ mt: 2 }}>
+      <Typography sx={{ mt: 2 }} align="center">
         Don't have an account? <Link href="/register">Register</Link>
       </Typography>
-    </Container>
+    </AuthLayout>
   );
 }

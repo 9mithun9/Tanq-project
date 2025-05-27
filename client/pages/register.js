@@ -1,7 +1,9 @@
+
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { TextField, Button, Typography, Container, Link, Alert } from '@mui/material';
+import { TextField, Button, Typography, Link, Alert } from '@mui/material';
 import axios from 'axios';
+import AuthLayout from '../layouts/AuthLayout'; // ✅ Layout added
 
 export default function Register() {
   const [name, setName] = useState('');
@@ -21,8 +23,8 @@ export default function Register() {
   };
 
   return (
-    <Container maxWidth="sm">
-      <Typography variant="h4" gutterBottom>
+    <AuthLayout>
+      <Typography variant="h5" align="center" gutterBottom>
         Register
       </Typography>
       {error && <Alert severity="error">{error}</Alert>}
@@ -53,9 +55,9 @@ export default function Register() {
           Register
         </Button>
       </form>
-      <Typography sx={{ mt: 2 }}>
+      <Typography sx={{ mt: 2 }} align="center">
         Already have an account? <Link href="/">Login</Link>
       </Typography>
-    </Container>
+    </AuthLayout>
   );
 }
