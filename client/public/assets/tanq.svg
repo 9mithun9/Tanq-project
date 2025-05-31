@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300.669" height="60.225" viewBox="0 0 300.669 60.225">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_203078" data-name="Rectangle 203078" width="66.902" height="59.612"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.287" y1="0.64" x2="0.696" y2="-0.079" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e1ff00"/>
+      <stop offset="1" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <path id="Path_259449" data-name="Path 259449" d="M0,0V18.663H34.082a9.033,9.033,0,0,1,7.156,14.546L52.481,18.663l.016-.02L66.9,0Z" transform="translate(0 -0.001)" fill="#e1ff00"/>
+    </clipPath>
+  </defs>
+  <g id="Group_489" data-name="Group 489" transform="translate(-102.465 -1363.388)">
+    <g id="Group_119" data-name="Group 119" transform="translate(96.465 1363)">
+      <g id="Group_116" data-name="Group 116" transform="translate(-29 1)">
+        <g id="Group_115" data-name="Group 115" transform="translate(35)" clip-path="url(#clip-path)">
+          <path id="Path_259448" data-name="Path 259448" d="M284.91,251.3,270.458,270l-5.935,7.678V236.759h13.232A9.032,9.032,0,0,1,284.91,251.3Z" transform="translate(-243.673 -218.097)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_118" data-name="Group 118" transform="translate(6 1)">
+        <g id="Group_117" data-name="Group 117" clip-path="url(#clip-path-2)">
+          <rect id="Rectangle_203079" data-name="Rectangle 203079" width="35.566" height="68.041" transform="translate(-1.18 33.166) rotate(-87.962)" fill="#e1ff00"/>
+        </g>
+      </g>
+    </g>
+    <path id="Path_259608" data-name="Path 259608" d="M-21577.211,8183.388" transform="translate(21751 -6820)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_260156" data-name="Path 260156" d="M35.64-6.75,19.818-37.8,4-6.75.54,0H8.1l3.456-6.75,8.262-16.2L28.08-6.75,31.536,0H39.1ZM73.386-37.8v24.084l-24.3-18.738-6.75-5.184V.054h6.75V-23.868L73.386-5.13,80.136.054v-37.8Zm49.95,18.9a18.921,18.921,0,0,0-18.9-18.9,18.921,18.921,0,0,0-18.9,18.9A18.921,18.921,0,0,0,104.436,0h18.846V-6.75h-4.428a18.844,18.844,0,0,0,4.428-12.15ZM104.706-6.75h-.324A12.168,12.168,0,0,1,92.232-18.9a12.168,12.168,0,0,1,12.15-12.15,12.168,12.168,0,0,1,12.15,12.15A12.175,12.175,0,0,1,104.706-6.75ZM146.34-37.8a18.921,18.921,0,0,0-18.9,18.9A18.921,18.921,0,0,0,146.34,0a18.921,18.921,0,0,0,18.9-18.9A18.921,18.921,0,0,0,146.34-37.8Zm0,31.05A12.168,12.168,0,0,1,134.19-18.9a12.168,12.168,0,0,1,12.15-12.15A12.168,12.168,0,0,1,158.49-18.9,12.168,12.168,0,0,1,146.34-6.75Zm48.114-10.692a9.015,9.015,0,0,0,2.916-.81,10.237,10.237,0,0,0,5.94-9.288,10.12,10.12,0,0,0-2.97-7.182,10.12,10.12,0,0,0-7.182-2.97H169.29V.108h6.75V-17.28h6.75a6.691,6.691,0,0,1,5.724,3.24l.162.324,3.618,7.074L195.75.108h7.56l-3.456-6.75ZM176.04-23.976v-6.966h17.118a3.4,3.4,0,0,1,2.43.972,3.562,3.562,0,0,1,1.026,2.484,3.43,3.43,0,0,1-2.052,3.132,3.151,3.151,0,0,1-1.4.324Zm59.616-13.878L225.288-24.408,214.92-37.854h-8.532L221.022-18.9l.918,1.134V-.054h6.75v-17.82l.81-1.026,14.634-18.954ZM206.334.108,206.442,0h-.108Zm37.8,0V0h-.054Z" transform="translate(159 1403)" fill="#fff"/>
+    <circle id="Ellipse_157" data-name="Ellipse 157" cx="6.389" cy="6.389" r="6.389" transform="translate(156.588 1410.834)" fill="#e1ff00"/>
+  </g>
+</svg>

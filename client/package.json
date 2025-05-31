@@ -1,5 +1,5 @@
 {
-  "name": "tanqory-client",
+  "name": "tanq-myapp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,18 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.11.11",
-    "@mui/lab": "^5.0.0-alpha.125",
-    "@mui/material": "^5.11.15",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@iconify/react": "^6.0.0",
+    "@minimal/material-kit-react": "github:minimal-ui-kit/material-kit-react",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/lab": "^7.0.0-beta.12",
+    "@mui/material": "^7.1.0",
+    "@react-hookz/web": "^25.1.1",
+    "@types/react": "^19.1.6",
     "axios": "^1.6.2",
-    "next": "14.0.3",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.15.0",
+    "next": "^15.3.3",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.56.4",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/node": "^22.15.27",
+    "autoprefixer": "^10.4.15",
     "eslint": "^8.54.0",
-    "eslint-config-next": "14.0.3"
+    "eslint-config-next": "14.0.3",
+    "postcss": "^8.4.21"
   }
 }
